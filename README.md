@@ -34,7 +34,7 @@ Results when the test datset comrpise 20% of all data:
 
 Heat Map:
 
-<img src="https://github.com/favicon.ico](https://user-images.githubusercontent.com/16980064/179246930-7412222e-5744-4da3-91be-bf1ca10643f6.png" width="100">
+<img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="100">
 
 Results when the test datset comrpise 30% of all data: 
 
