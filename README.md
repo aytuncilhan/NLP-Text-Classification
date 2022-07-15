@@ -31,11 +31,6 @@ Results when the test datset comrpise 20% of all data:
                 weighted avg       0.71      0.69      0.66       428
 
 
-
-Heat Map:
-
-<img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="100">
-
 Results when the test datset comrpise 30% of all data: 
 
 
@@ -61,7 +56,7 @@ Heat Map:
 
 | 20%        | 30%           |
 | :-------------: |:-------------:|
-| col 3 is      | right-aligned |
+| <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="500"> | <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="500"> |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
 
