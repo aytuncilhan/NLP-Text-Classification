@@ -1,7 +1,7 @@
-# Venture Capital Investments Classifier
-Natural Language Processing model to analyze Venture Capital Investment activity purpose.
+# Venture Capital Investment Activity Classifier
+Various Natural Language Processing libraries are implemented to train the model and accurately classify the purpose of the investment.
 
-TRAIN DATA VALUE COUNTS: 
+Training dataset labels value count of investment purpose: 
  
     ALL M&A                         426
     Improve Governance              420
@@ -25,18 +25,16 @@ Results when the test datset comrpise 20% of all data:
         Sell Target Company        0.50      0.75      0.60        93
                   Bankruptcy       0.00      0.00      0.00         1
     Change Capital Structure       0.74      0.82      0.78       159
-    
 
-                
                     accuracy                           0.69       428
                    macro avg       0.65      0.43      0.46       428
                 weighted avg       0.71      0.69      0.66       428
 
 
+
 Heat Map:
 
-![Figure_20percent](https://user-images.githubusercontent.com/16980064/179246930-7412222e-5744-4da3-91be-bf1ca10643f6.png)
-
+<img src="https://github.com/favicon.ico](https://user-images.githubusercontent.com/16980064/179246930-7412222e-5744-4da3-91be-bf1ca10643f6.png" width="100">
 
 Results when the test datset comrpise 30% of all data: 
 
@@ -58,4 +56,14 @@ Results when the test datset comrpise 30% of all data:
                 
 Heat Map:
 ![Figure_30percent](https://user-images.githubusercontent.com/16980064/179246880-6bd60e23-9a7a-4822-bfc3-2c6d42fb88bc.png)
+
+
+
+| 20%        | 30%           |
+| :-------------: |:-------------:|
+| col 3 is      | right-aligned |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
+
+
 
