@@ -32,6 +32,12 @@ Results when the test datset comrpise 20% of all data:
                    macro avg       0.65      0.43      0.46       428
                 weighted avg       0.71      0.69      0.66       428
 
+
+Heat Map:
+
+![Figure_20percent](https://user-images.githubusercontent.com/16980064/179246930-7412222e-5744-4da3-91be-bf1ca10643f6.png)
+
+
 Results when the test datset comrpise 30% of all data: 
 
 
@@ -48,4 +54,8 @@ Results when the test datset comrpise 30% of all data:
                     accuracy                           0.65       641
                    macro avg       0.64      0.41      0.44       641
                 weighted avg       0.68      0.65      0.62       641
-    
+                
+                
+Heat Map:
+![Figure_30percent](https://user-images.githubusercontent.com/16980064/179246880-6bd60e23-9a7a-4822-bfc3-2c6d42fb88bc.png)
+
