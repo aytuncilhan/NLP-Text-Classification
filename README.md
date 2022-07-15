@@ -49,16 +49,17 @@ Results when the test datset comrpise 30% of all data:
                 weighted avg       0.68      0.65      0.62       641
                 
                 
-Heat Map:
-![Figure_30percent](https://user-images.githubusercontent.com/16980064/179246880-6bd60e23-9a7a-4822-bfc3-2c6d42fb88bc.png)
+### Heat Maps
 
 
 
 | 20%        | 30%           |
 | :-------------: |:-------------:|
-| <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="500"> | <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="500"> |
+| <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="600"> | <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/30percent.png" width="600"> |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
 
 
+## Analysis and Conclusion
 
+Lorem ipsum dolor sit amet
