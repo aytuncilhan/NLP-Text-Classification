@@ -28,11 +28,12 @@ On the right, you can see the distribution of the labels in the training dataset
 Having allocated 20% of the dataset at random for testing, each classifier output is analysed with precision, recall, f1-score and support Key Performance Indicators. In addition, the confusion matrix for each classifier is presented in a heatmap format.
 
 ### 3.1. Random Forest Classifier
-<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Report_RF_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Heatmap_RF_20.png" width="500">
 
 The Random Forest Classifier is the highest performing one among all others.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+Test Report             |  Confusion Matrix
+:-------------------------:|:-------------------------:
+<img src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Report_RF_20.png" width="500"> | <img align="top" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Heatmap_RF_20.png" width="500">
 
 ### 3.2. Linear Support Vector Classifier (LinearSVC)
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Report_LSVC_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Heatmap_LSVC_20.png" width="500">
