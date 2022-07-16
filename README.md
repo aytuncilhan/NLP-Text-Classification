@@ -12,8 +12,6 @@ The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](h
 **4. Linear Support Vector Classifier (LinearSVC)**, <br/>
 **5. K-nearest Neighbor.**
 
-<br/>
-
 In the next section, the acquired and processed dataset used in this project is introfuced. Then the classifier performances are presented. The document ends with Leassons Learned and Conslusions.
 
 ## 2. About the Data
@@ -36,9 +34,33 @@ The Random Forest Classifier is the highest performing one among all others.
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-### 3.2. LinerSVC (Support Vector Classifier)
+### 3.2. Stochastic Gradient Descent
+<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Report_SGD_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Heatmap_SGD_20.png" width="500">
 
+The Random Forest Classifier is the highest performing one among all others.
 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+### 3.3. Multinomial Naive Bayesian
+<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Report_RF_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/RandomForrest/Heatmap_RF_20.png" width="500">
+
+The Random Forest Classifier is the highest performing one among all others.
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+### 3.4. Linear Support Vector Classifier (LinearSVC)
+<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Report_LSVC_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Heatmap_LSVC_20.png" width="500">
+
+The Random Forest Classifier is the highest performing one among all others.
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+### 3.5. K-nearest Neighbor (Support Vector Classifier)
+<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Report_KNN_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Heatmap_KNN_20.png" width="500">
+
+The Random Forest Classifier is the highest performing one among all others.
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ## Analysis and Conclusion
 
