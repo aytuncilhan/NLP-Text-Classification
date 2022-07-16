@@ -1,34 +1,16 @@
-from pprint import PrettyPrinter
-import nltk
-from nltk.classify.naivebayes import NaiveBayesClassifier
 import pandas as pd
-import re
 import numpy as np
 import matplotlib.pyplot as plt
-from nltk.corpus import stopwords
-from nltk.stem import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import SelectKBest, chi2
-from sqlite3 import Error
 from sklearn.ensemble import RandomForestClassifier
-import pickle
-import glob
-from collections import defaultdict
-from pathlib import Path
-import pandas as df
-import re
 from sklearn.linear_model import SGDClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.pipeline import make_pipeline
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.utils.sparsefuncs import min_max_axis
-from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
-import os
 
 class NLPclassifier:
 
@@ -36,6 +18,7 @@ class NLPclassifier:
     LinearSVC = LinearSVC()
     KNeighborsClassifier = KNeighborsClassifier()
     SGDClassifier = SGDClassifier()
+    MultinomialNB = MultinomialNB()
 
     def classify_v1(train):
         vectorizer = TfidfVectorizer(min_df= 10, stop_words="english", sublinear_tf=True, norm='l2', ngram_range=(1, 2))
@@ -129,10 +112,10 @@ class NLPclassifier:
         # N = 3
         #for NameCat, NumCat in sorted(category_to_id.items()):
         #    features_chi2 = chi2(features, labels == NumCat)
-    #
+        #
         #    indices = np.argsort(features_chi2[0])
         #    feature_names = np.array(tfidf.get_feature_names())[indices]
-    #
+        #
         #    unigrams = [v for v in feature_names if len(v.split(' ')) == 1]
         #    bigrams = [v for v in feature_names if len(v.split(' ')) == 2]
         #    print(" > '{}':".format(NameCat))
@@ -150,19 +133,23 @@ class NLPclassifier:
         from sklearn.metrics import confusion_matrix
         conf_mat = confusion_matrix(list(y_test.values), y_pred)
 
-        #import seaborn as sns
+        import seaborn as sns
 
-        #fig, ax = plt.subplots(figsize=(15,15))
-        #sns.heatmap(conf_mat, annot=True, fmt='d',
-        #        xticklabels=category_id_df.NameCategory.values, yticklabels=category_id_df.NameCategory.values)
-        #import textwrap
-        #f = lambda x: textwrap.fill(x.get_text(), 12) 
-        #ax.set_yticklabels(map(f, ax.get_yticklabels()))
-        #ax.set_xticklabels(map(f, ax.get_xticklabels()))
+        fig, ax = plt.subplots(figsize=(7,7))
+        plt.tight_layout()
+        ax = fig.add_axes((0.3,0.3,0.5,0.5))
+        plt.box(on=None)
+        sns.heatmap(conf_mat, annot=True, fmt='d',
+                xticklabels=category_id_df.NameCategory.values, yticklabels=category_id_df.NameCategory.values)
+        import textwrap
+        f = lambda x: textwrap.fill(x.get_text(), 12) 
+        ax.set_yticklabels(map(f, ax.get_yticklabels()))
+        ax.set_xticklabels(map(f, ax.get_xticklabels()))
 
-        #plt.ylabel('Actual')
-        #plt.xlabel('Predicted')
-        #plt.show()
+        plt.ylabel('Actual')
+        plt.xlabel('Predicted')
+        plt.show()
 
         from sklearn import metrics
-        print(metrics.classification_report(list(y_test.values), y_pred, target_names=train_data['NameCategory'].unique()))
+        report = metrics.classification_report(list(y_test.values), y_pred, target_names=train_data['NameCategory'].unique())
+        print(report)

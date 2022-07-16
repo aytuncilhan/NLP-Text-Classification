@@ -19,7 +19,7 @@ class DataEngine:
     # Read all "first_stage" .txt files and extract the "item 4" descriptions to "/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/alldata.pkl"
     def generateAllData():
 
-        # TODO: The Data for 13D filing smus
+        # TODO: The correct path for 13D filings text file needs to be added.
         my_dir_path = "/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/DATA_TO_BE_ADDED/"
         results = defaultdict(list)
         index = 0
@@ -66,6 +66,8 @@ class DataEngine:
 
         alldata.to_pickle("/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/alldata.pkl")
 
+    # All data generation is done in the generate_v2() method but takes a long time.
+    # This method needs to run only when the whole data needs and update.
     def generate_v2():
 
         my_dir_path = "/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/"
@@ -119,8 +121,6 @@ class DataEngine:
         results.to_csv(r'/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/alldata_V2.csv')
         results.to_pickle("/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/alldata_V2.pkl")
 
-
-
     ## TRAINING DATA GENERATION ##
     def generateTrainData():
         
@@ -148,6 +148,7 @@ class DataEngine:
 
         train.to_pickle("/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/traindata.pkl")
 
+    # Using nltk for pre-processing data.
     def generateTrainData_V2():
         
         all_data = pd.read_pickle("/Users/aytuncilhan/Documents/Documents/Projects/VC_Analysis/alldata_V2.pkl")
