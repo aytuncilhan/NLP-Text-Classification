@@ -9,8 +9,8 @@ The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](h
 **1. Random Forest**, <br/>
 **2. Linear Support Vector Classifier (LinearSVC)**, <br/>
 **3. Stochastic Gradient Descent**, <br/>
-**4. K-nearest Neighbor**,
-**5. Multinomial Naive Bayesian**. <br/>
+**4. K-nearest Neighbor**,<br/>
+**5. Multinomial Naive Bayesian**.<br/>
 
 In the next section, the acquired and processed dataset used in this project is introfuced. Then the classifier performances are presented. The document ends with Leassons Learned and Conslusions.
 
