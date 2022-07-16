@@ -12,7 +12,7 @@ Training dataset labels value count of investment purpose:
     Bankruptcy                       18
     Other                           850
 
-Random Forest Classifier is used.
+## 1. Random Forest Classifier
 
 Results when the test datset comrpise 20% of all data: 
 
@@ -58,6 +58,10 @@ Results when the test datset comrpise 30% of all data:
 | <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/20Percent.png" width="600"> | <img src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/Assests/30percent.png" width="600"> |
 | col 2 is      | centered      |
 | zebra stripes | are neat      |
+
+
+## 2. LinerSVC (Support Vector Classifier)
+
 
 
 ## Analysis and Conclusion
