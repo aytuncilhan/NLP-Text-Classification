@@ -49,7 +49,7 @@ The Random Forest Classifier is the highest performing one among all others.
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ### 3.4. Multinomial Naive Bayesian
-<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/MultinomialNaiveBayes/RandomForrest/Heatmap_MNB_20.png" width="500">
+<img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/MultinomialNaiveBayes/MultinomialNaiveBayes/Heatmap_MNB_20.png" width="500">
 
 The Random Forest Classifier is the highest performing one among all others.
 
