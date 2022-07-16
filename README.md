@@ -16,12 +16,12 @@ In the next section, the acquired and processed dataset used in this project is 
 
 ## 2. About the Data
 
-<img align="right" src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/AnalysisResults/DatasetOccurence.png" alt="My Image" width="500">
+<img align="right" src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/AnalysisResults/DatasetOccurence.png" alt="My Image" width="400">
 The 13D filings were initially manually labeled and the training (and testing) dataset was created. Due to data privacy reasons, the respective datasets are not presented in the repository. However, data can be shared upon request with the permission of the originator(s).
 <br/><br/>
 On the right, you can see the distribution of the labels in the training dataset.
 
-<br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ## 3. Classifiers
 
