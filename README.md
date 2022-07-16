@@ -6,12 +6,13 @@ The aim for this project is to automate the process of classifying the purpose o
 
 The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](https://scikit-learn.org/stable/) library is used to implement the Natural Language Processing model to accurately classify investment purposes, utilizing the extracted data from [13D filings](https://en.wikipedia.org/wiki/Schedule_13D). As classifier models, the following are used and their performances are analyzed:
 
-**Random Forest**,
-**K-nearest Neighbors**,
-**Linear Support Vector Classifier (LinearSVC)**
-**Linear Support Vector Classifier (LinearSVC)**
-**Linear Support Vector Classifier (LinearSVC)**
+**1. Random Forest**, <br/>
+**2. Stochastic Gradient Descent**, <br/>
+**3. Multinomial Naive Bayesian**, <br/>
+**4. Linear Support Vector Classifier (LinearSVC)**, <br/>
+**5. K-nearest Nerighnor ** 
 
+<br/>
 
 ## 2. About the Data
 
