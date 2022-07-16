@@ -1,9 +1,10 @@
 # Venture Capital Investment Activity Classifier
 The aim for this project is to automate the process of classifying the purpose of Venture Capital investments under the 8 predefined categories (listed in the table below).
 
-[Scikit-learn](https://scikit-learn.org/stable/) library is used to implement a Natural Language Processing model to accurately classify investment purposes, utilizing the extracted data from [13D filings](https://en.wikipedia.org/wiki/Schedule_13D). As classifier models, **Random Forest**, **K-nearest Neighbors**, and **Linear Support Vector Classifier (LinearSVC)** are used. Their performances are analysed depending on a variety of KPIs.
+The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](https://scikit-learn.org/stable/) library is used to implement the Natural Language Processing model to accurately classify investment purposes, utilizing the extracted data from [13D filings](https://en.wikipedia.org/wiki/Schedule_13D). As classifier models, **Random Forest**, **K-nearest Neighbors**, and **Linear Support Vector Classifier (LinearSVC)** are used. Their performances are analysed depending on a variety of KPIs.
 
 ## About the Dataset
+
 Training dataset labels value count of investment purpose: 
 
 | Purpose       | Occurence Frequency |
@@ -17,9 +18,7 @@ Training dataset labels value count of investment purpose:
 | Bankruptcy                    | 18 |
 | Other                         | 850 |
 
-
-
-
+Due to data privacy reasons, the respective datasets are not presented in the repository.
 
 ## 1. Random Forest Classifier
 
