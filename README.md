@@ -60,7 +60,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * Also, note that while SVM performs better for small datasets ([e.g. <100k samples](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)) Linear SVC [performs well](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) for large datasets.
 * Looking at the test results, LinearSVC achieved 69% accuuracy, about the same as Random Forest Classifier which makes the two methods best fit for this project.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ### 3.3. Stochastic Gradient Descent (SGD)
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Report_SGD_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Heatmap_SGD_20.png" width="500">
@@ -72,7 +72,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
   * SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations.
   * SGD is sensitive to feature scaling.
 
-<br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ### 3.4. K-nearest Neighbor Classifier
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Report_KNN_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Heatmap_KNN_20.png" width="500">
@@ -91,7 +91,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * The low accuracy rate is probably the result of the assumption that the features are uncorrelated (provided that the categories are various motivations of financial investments and it's naive to assume uncorrelated features from the extarcted text.
 * Just like KNN, about 50% accuracy is reached which is approximately still 3 times better than baseline random selection  of 12.5%.
 * Unlike KNN, from the heatmaps, Multinomial Naive Bayesian has done interestingly well in identifying "Improve Governance" cluster (this was the section all other classifiers had trouble with in their confusion matrix) but has done terribly wrong in identifying "Other" cluster.
-<br/><br/>
+<br/><br/><br/><br/>
 
 ## Conclusion and Future Work
 
