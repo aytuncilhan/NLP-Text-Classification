@@ -17,11 +17,11 @@ In the next section, the acquired and processed dataset used in this project is 
 ## 2. About the Data
 
 <img align="right" src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/AnalysisResults/DatasetOccurence.png" alt="My Image" width="400">
-The 13D filings were manually labeled to create the training (and testing) dataset. *Due to data privacy reasons, the respective datasets are not presented in the repository. However, data can be shared upon request with the permission of the originator(s).*
+The 13D filings were manually labeled to create the training (and testing) dataset. Due to data privacy reasons, the datasets are not provided in the repository but they can be shared upon request with the permission of the originator(s).
 <br/><br/>
 On the right, you can see the distribution of the labels in the training dataset.
 <br/><br/>
-In the project, *DataEngine.py* provides the pre-processing of raw data until it gets ready for the training models. After reading the .txt files into a pandas dataframe, we use NLTK stemmer to get stems of each word and use stopwords to remove unnecessary words from the dataset.
+In the project, the DataEngine class provides the pre-processing of raw data until it gets ready for the training models. After reading the .txt files into a pandas dataframe, we use NLTK stemmer to get stems of each word and use stopwords to remove unnecessary words from the dataset.
 
 ```
 stemmer = PorterStemmer()
