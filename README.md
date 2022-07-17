@@ -81,7 +81,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
   * It's considered a non-parametric method because it doesn’t make any assumptions about the underlying data distribution. Simply put, KNN tries to determine what group a data point belongs to by looking at the data points around it.
 * The simplicity of the KNN algorithm fails to cope with the text data extracted from the filings and hence the accuracy seems to be lower compared to other more complex classifiers (e.g. that use kernels as LinearSVC or set of Decision Trees as Random Forest).
 * Nonetheless, approximately 50% accuracy is reached which is around 3 times better than baseline random selection of 12.5%.
-* Lorem
+* Just like the previous three classifiers, Improve Governance was the most confused cluster but the poor result is amplified in KNN.
 
 <br/><br/><br/>
 
@@ -92,7 +92,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * As explained [here](https://towardsdatascience.com/naive-bayes-classifier-explained-50f9723571ed), the key difference of Naive Bayes Classifier is that it assumes that features are independent of each other and there is no correlation between features. However, this is not the case in real life. This naive assumption of features being uncorrelated is the reason why this algorithm is called “naive”.
 * The low accuracy rate is probably the result of the assumption that the features are uncorrelated (provided that the categories are various motivations of financial investments and it's naive to assume uncorrelated features from the extarcted text.
 * Just like KNN, about 50% accuracy is reached which is approximately still 3 times better than baseline random selection  of 12.5%.
-* Unlike KNN, from the heatmaps, Multinomial Naive Bayesian has done well in identifying "Improve Governance" cluster but has done terribly wrong in "other" cluster.
+* Unlike KNN, from the heatmaps, Multinomial Naive Bayesian has done interestingly well in identifying "Improve Governance" cluster (this was the section all other classifiers had trouble with in their confusion matrix) but has done terribly wrong in identifying "Other" cluster.
 
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
