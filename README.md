@@ -90,9 +90,9 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * As explined [here](https://towardsdatascience.com/naive-bayes-classifier-explained-50f9723571ed), the key difference of Naive Bayes Classifier is that it assumes that features are independent of each other and there is no correlation between features. However, this is not the case in real life. This naive assumption of features being uncorrelated is the reason why this algorithm is called “naive”.
 * The low accuracy rate is probably the result of the assumption that the features are uncorrelated (provided that the categories are various motivations of financial investments and it's naive to assume uncorrelated features from the extarcted text.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-## Conclusion and Future Worl
+## Conclusion and Future Work
 
 This was a great project to work with unstructured data, preprocess data, train models and assess their performances in the given context.
 
