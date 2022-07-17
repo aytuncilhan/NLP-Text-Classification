@@ -72,17 +72,16 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
   * SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations.
   * SGD is sensitive to feature scaling.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
 
 ### 3.4. K-nearest Neighbor Classifier
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Report_KNN_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Heatmap_KNN_20.png" width="500">
 * The K-nearest Neighbor Classifier is one of the simplest algorithms to implement. The lsimplicity is well explained in this [g2 article](https://learn.g2.com/k-nearest-neighbor):
   * It's called a lazy learning algorithm or lazy learner because it doesn't perform any training when you supply the training data. Instead, it just stores the data during the training time and doesn't perform any calculations. It doesn't build a model until a query is performed on the dataset. This makes KNN ideal for data mining.
   * It's considered a non-parametric method because it doesn’t make any assumptions about the underlying data distribution. Simply put, KNN tries to determine what group a data point belongs to by looking at the data points around it.
-
 * The simplicity of the KNN algorithm fails to cope with the text data extracted from the filings and hence the accuracy seems to be lower compared to other more complex classifiers (e.g. that use kernels as LinearSVC or set of Decision Trees as Random Forest).
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
 
 ### 3.5. Multinomial Naive Bayesian
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Heatmap_MNB_20.png" width="500">
