@@ -72,7 +72,7 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
   * SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations.
   * SGD is sensitive to feature scaling.
 
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/>
 
 ### 3.4. K-nearest Neighbor Classifier
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Report_KNN_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Heatmap_KNN_20.png" width="500">
@@ -83,17 +83,14 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * Nonetheless, approximately 50% accuracy is reached which is around 3 times better than baseline random selection of 12.5%.
 * Just like the previous three classifiers, Improve Governance was the most confused cluster but the poor result is amplified in KNN.
 
-
 ### 3.5. Multinomial Naive Bayesian
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Heatmap_MNB_20.png" width="500">
-
 * Known as one of the most simple, straightforward Machine Learning Algorithm.
 * As explained [here](https://towardsdatascience.com/naive-bayes-classifier-explained-50f9723571ed), the key difference of Naive Bayes Classifier is that it assumes that features are independent of each other and there is no correlation between features. However, this is not the case in real life. This naive assumption of features being uncorrelated is the reason why this algorithm is called “naive”.
 * The low accuracy rate is probably the result of the assumption that the features are uncorrelated (provided that the categories are various motivations of financial investments and it's naive to assume uncorrelated features from the extarcted text.
 * Just like KNN, about 50% accuracy is reached which is approximately still 3 times better than baseline random selection  of 12.5%.
 * Unlike KNN, from the heatmaps, Multinomial Naive Bayesian has done interestingly well in identifying "Improve Governance" cluster (this was the section all other classifiers had trouble with in their confusion matrix) but has done terribly wrong in identifying "Other" cluster.
 
-<br/><br/><br/><br/>
 
 ## Conclusion and Future Work
 
