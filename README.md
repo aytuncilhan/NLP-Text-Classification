@@ -56,26 +56,33 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 
 ### 3.2. Linear Support Vector Classifier (LinearSVC)
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Report_LSVC_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Heatmap_LSVC_20.png" width="500">
-
 * It is important to highlight the differences between [Support Vector Machine (SVM)](https://scikit-learn.org/stable/modules/svm.html#svm-classification) and Linear SVC even though Linear SVC is documents under SVM in Scikit-learn documentation. [This stackoverflow article](https://stackoverflow.com/questions/33843981/under-what-parameters-are-svc-and-linearsvc-in-scikit-learn-equivalent) explains some of the differnces in contrast to the documentation.
 * Also, note that while SVM performs better for small datasets ([e.g. <100k samples](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)) Linear SVC [performs well](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) for large datasets.
 * Looking at the test results, LinearSVC achieved 69% accuuracy, about the same as Random Forest Classifier which makes the two methods best fit for this project.
 
-<br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-### 3.3. Stochastic Gradient Descent
+### 3.3. Stochastic Gradient Descent (SGD)
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Report_SGD_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Heatmap_SGD_20.png" width="500">
+* As mentioned in the [Scikit-learn documentation](https://scikit-learn.org/stable/modules/sgd.html), Stochastic Gradient Descent (SGD) is a simple yet very efficient approach to fitting linear classifiers and regressors under convex loss functions such as (linear) Support Vector Machines and Logistic Regression. Considering the (linear) SVM relation of SGD and having made the point that SVM is different than LinearSVC in the previous section, it is interesting to see the similarity between Linear SVC and SGD.
+* Again from the [Scikit-learn documentation](https://scikit-learn.org/stable/modules/sgd.html), the advantages of Stochastic Gradient Descent are:
+  * Efficiency.
+  * Ease of implementation (lots of opportunities for code tuning).
+* And the disadvantages of Stochastic Gradient Descent include:
+  * SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations.
+  * SGD is sensitive to feature scaling.
 
-The Random Forest Classifier is the highest performing one among all others.
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-### 3.4. K-nearest Neighbor (Support Vector Classifier)
+### 3.4. K-nearest Neighbor Classifier
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Report_KNN_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/KNearestNeighbor/Heatmap_KNN_20.png" width="500">
+* The K-nearest Neighbor Classifier is one of the simplest algorithms to implement. The lsimplicity is well explained in this [g2 article](https://learn.g2.com/k-nearest-neighbor):
+  * It's called a lazy learning algorithm or lazy learner because it doesn't perform any training when you supply the training data. Instead, it just stores the data during the training time and doesn't perform any calculations. It doesn't build a model until a query is performed on the dataset. This makes KNN ideal for data mining.
+  * It's considered a non-parametric method because it doesn’t make any assumptions about the underlying data distribution. Simply put, KNN tries to determine what group a data point belongs to by looking at the data points around it.
 
-The Random Forest Classifier is the highest performing one among all others.
+* The simplicity of the KNN algorithm fails to cope with the text data extracted from the filings and hence the accuracy seems to be lower compared to other more complex classifiers (e.g. that use kernels as LinearSVC or set of Decision Trees as Random Forest).
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 ### 3.5. Multinomial Naive Bayesian
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Heatmap_MNB_20.png" width="500">
