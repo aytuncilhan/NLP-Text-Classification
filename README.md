@@ -4,7 +4,7 @@
 
 The aim for this project is to automate the process of classifying the purpose of Venture Capital investments under the 8 predefined categories (listed in the table below).
 
-The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](https://scikit-learn.org/stable/) library is used to implement the Natural Language Processing model to accurately classify investment purposes, utilizing the extracted data from [13D filings](https://en.wikipedia.org/wiki/Schedule_13D). As classifier models, the following are used and their performances are analyzed:
+The [Natural Language Toolkit (nltk)](https://www.nltk.org) and [Scikit-learn](https://scikit-learn.org/stable/) library is used to implement a Natural Language Processing model and run Supervised Machine Learning to accurately classify investment purposes, utilizing the extracted data from [13D filings](https://en.wikipedia.org/wiki/Schedule_13D). As classifier models, the following are used and their performances are analyzed:
 
 **1. Random Forest**, <br/>
 **2. Linear Support Vector Classifier (LinearSVC)**, <br/>
@@ -83,7 +83,6 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * Nonetheless, approximately 50% accuracy is reached which is around 3 times better than baseline random selection of 12.5%.
 * Just like the previous three classifiers, Improve Governance was the most confused cluster but the poor result is amplified in KNN.
 
-<br/><br/><br/>
 
 ### 3.5. Multinomial Naive Bayesian
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Report_MNB_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/MultinomialNaiveBayes/Heatmap_MNB_20.png" width="500">
@@ -94,10 +93,12 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 * Just like KNN, about 50% accuracy is reached which is approximately still 3 times better than baseline random selection  of 12.5%.
 * Unlike KNN, from the heatmaps, Multinomial Naive Bayesian has done interestingly well in identifying "Improve Governance" cluster (this was the section all other classifiers had trouble with in their confusion matrix) but has done terribly wrong in identifying "Other" cluster.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/>
 
 ## Conclusion and Future Work
 
-This was a great project to work with unstructured data, preprocess data, train models and assess their performances in the given context.
+This was a great project to work with unstructured data, preprocess data, implement Supervised Machine Learning, and assess their performances in the given context.
 
-For future work, a more balanced and high-quality dataset would yield much higher accuracies as with the current data, we seem to achieve just under 70% accuracy.
+The heatmaps provide great insights as to how the classifier fails. Further analysis can be done by looking at the vectors and identified features to have deeper insights on the performance of the classifiers for specific clusters.
+
+Maximum accuracy was just under 70% for this project (for 8 clusters) but with a more balanced and high-quality dataset would yield much higher accuracy.
