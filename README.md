@@ -19,7 +19,7 @@ In the next section, the acquired and processed dataset used in this project is 
 <img align="right" src="https://raw.githubusercontent.com/aytuncilhan/VC-Investment-Analysis/main/AnalysisResults/DatasetOccurence.png" alt="My Image" width="400">
 The 13D filings were manually labeled to create the training (and testing) dataset. Due to data privacy reasons, the datasets are not provided in the repository but they can be shared upon request with the permission of the originator(s).
 <br/><br/>
-On the right, you can see the distribution of the labels in the training dataset.
+On the right, you can see the distribution of the labels in the training dataset. The dataset is an imbalanced dataset and this fact is reflected upon in the upcoming section, especially when analysing the results of Linear SVC.
 <br/><br/>
 In the project, the DataEngine class provides the pre-processing of raw data until it gets ready for the training models. After reading the .txt files into a pandas dataframe, we use NLTK stemmer to get stems of each word and use stopwords to remove unnecessary words from the dataset.
 
@@ -57,9 +57,11 @@ Having allocated 20% of the dataset at random for testing, each classifier outpu
 ### 3.2. Linear Support Vector Classifier (LinearSVC)
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Report_LSVC_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/LinearSVC/Heatmap_LSVC_20.png" width="500">
 
-The Random Forest Classifier is the highest performing one among all others.
+* It is important to highlight the differences between [Support Vector Machine (SVM)](https://scikit-learn.org/stable/modules/svm.html#svm-classification) and Linear SVC even though Linear SVC is documents under SVM in Scikit-learn documentation. [This stackoverflow article](https://stackoverflow.com/questions/33843981/under-what-parameters-are-svc-and-linearsvc-in-scikit-learn-equivalent) explains some of the differnces in contrast to the documentation.
+* Also, note that while SVM performs better for small datasets ([e.g. <100k samples](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)) Linear SVC [performs well](https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html) for large datasets.
+* Looking at the test results, LinearSVC achieved 69% accuuracy, about the same as Random Forest Classifier which makes the two methods best fit for this project.
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/>
 
 ### 3.3. Stochastic Gradient Descent
 <img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Report_SGD_20.png" width="500"><br/><img align="right" src="https://github.com/aytuncilhan/VC-Investment-Analysis/blob/main/AnalysisResults/StochasticGradientDescent/Heatmap_SGD_20.png" width="500">
